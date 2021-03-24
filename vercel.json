@@ -2,7 +2,7 @@
     "rewrites": [
         {
             "source": "/backend/(.*)",
-            "reapi": "/api"
+            "reapis": "/api"
         }
     ]
 }
