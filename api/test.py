@@ -41,10 +41,13 @@ def test():
     after.save("output.png")
 
 
+
+
 class handler(BaseHTTPRequestHandler):
 
   def do_GET(self):
-    img = test()
+    # img = test()
+    img = Image.open("api/dest.png")
     self.send_response(200)
     self.send_header('Content-type', 'application/x-www-form-urlencoded')
     self.end_headers()
