@@ -1,6 +1,6 @@
+import { VercelRequest, VercelResponse } from '@vercel/node'
 
-
-module.exports = (req, res) => {
-    console.log(process.env.testEnv)
-    res.status(200).send(process.env.testEnv)
+export default function (req: VercelRequest, res: VercelResponse) {
+    const { name = 'World' } = req.query
+    res.send(`Hello ${name}!`)
 }

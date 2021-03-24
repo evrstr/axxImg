@@ -54,6 +54,6 @@ class handler(BaseHTTPRequestHandler):
     self.send_header('Content-type', 'application/image/png')
     self.end_headers()
     # self.wfile.write(str(datetime.now().strftime('%Y-%m-%d %H:%M:%S')).encode())
-    self.wfile.write(img)
+    self.wfile.write
     return
 
