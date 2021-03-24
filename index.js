@@ -3,8 +3,10 @@ const app = express();
 
 
 
-module.exports = function () {
-    app.get('/', (req, res) => {
-        res.send('Hello World!')
-      })
-}
+module.exports = (req, res) => {
+    res.json({
+      body: req.body,
+      query: req.query,
+      cookies: req.cookies,
+    })
+  }
