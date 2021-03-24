@@ -15,7 +15,7 @@ def test():
     text = "御驾亲征"
 
     # 字体
-    font = ImageFont.truetype("api/Shouxieti.ttf", 75)
+    font = ImageFont.truetype("Shouxieti.ttf", 75)
     # 将图片转为图层
     layer = img.convert("RGBA")
     #生成对应图片
