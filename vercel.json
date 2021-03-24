@@ -1,8 +1,8 @@
 {
     "rewrites": [
         {
-            "source": "/backend/(.*)",
-            "reapis": "/api"
+            "source": "/api",
+            "destination": "/reapi"
         }
     ]
 }
