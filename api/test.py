@@ -7,6 +7,8 @@ from http.server import BaseHTTPRequestHandler
 from datetime import datetime
 import os
 
+
+
 def test():
     print(os.listdir())
     print(os.listdir('api'))
@@ -49,7 +51,7 @@ class handler(BaseHTTPRequestHandler):
     # img = test()
     img = Image.open("api/dest.png")
     self.send_response(200)
-    self.send_header('Content-type', 'application/x-www-form-urlencoded')
+    self.send_header('Content-type', 'application/image/png')
     self.end_headers()
     # self.wfile.write(str(datetime.now().strftime('%Y-%m-%d %H:%M:%S')).encode())
     self.wfile.write(img)
