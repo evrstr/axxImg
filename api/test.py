@@ -5,8 +5,10 @@ from PIL import Image, ImageDraw, ImageFont
 import random
 from http.server import BaseHTTPRequestHandler
 from datetime import datetime
+import os
 
 def test():
+    print(os.listdir())
     img = Image.open("./dest.png")
     print(img.info)
     text = "御驾亲征"
