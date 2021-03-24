@@ -9,6 +9,7 @@ import os
 
 def test():
     print(os.listdir())
+    print(os.listdir('api'))
     img = Image.open("./dest.png")
     print(img.info)
     text = "御驾亲征"
