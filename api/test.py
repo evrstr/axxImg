@@ -7,7 +7,7 @@ from http.server import BaseHTTPRequestHandler
 from datetime import datetime
 
 def test():
-    img = Image.open("dest.png")
+    img = Image.open("./dest.png")
     print(img.info)
     text = "御驾亲征"
 
