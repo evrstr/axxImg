@@ -15,8 +15,5 @@
   "bugs": {
     "url": "https://github.com/evrstr/axxImg/issues"
   },
-  "homepage": "https://github.com/evrstr/axxImg#readme",
-  "devDependencies": {
-    "@vercel/node": "^1.9.1"
-  }
+  "homepage": "https://github.com/evrstr/axxImg#readme"
 }
